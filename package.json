@@ -6,9 +6,9 @@
     "node": ">=4.5",
     "npm": ">=3"
   },
-  "repository" : {
-    "type" : "git",
-    "url" : "https://github.com/psx900910/AddressBook.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/psx900910/AddressBook.git"
   },
   "license": "MIT",
   "scripts": {
@@ -30,7 +30,7 @@
     "test:server": "cd server && npm test",
     "test:server-setup": "./node_modules/.bin/baker run --forever --test_run ./server/src",
     "test:setup": "./node_modules/.bin/baker run ./.baker/ci/run-tests.js",
-    "icons" : "./node_modules/.bin/baker run ./.baker/make-icons.js"
+    "icons": "./node_modules/.bin/baker run ./.baker/make-icons.js"
   },
   "devDependencies": {
     "baker-scripts": "*",
@@ -49,5 +49,8 @@
     "yeoman-environment": "^1.6.1",
     "yeoman-generator": "^0.24.1",
     "yeoman-test": "^1.4.0"
+  },
+  "dependencies": {
+    "mongodb-download-url": "^0.2.0"
   }
 }

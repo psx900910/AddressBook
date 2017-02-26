@@ -1,12 +1,22 @@
 /* eslint comma-dangle: "off", prefer-template: "off", eol-last: "off" */
-import Example from '../models/Example';
+import Departments from '../models/Departments';
+import Notifications from '../models/Notifications';
+import Contacts from '../models/Contacts';
 import {
   GraphQLObjectType,
   GraphQLSchema
 } from 'graphql';
 import assert from 'assert';
-const queries = { example: Example.RootQuery };
-const mutations = [Example.Mutations];
+const queries = {
+  contacts: Contacts.RootQuery,
+  notifications: Notifications.RootQuery,
+  departments: Departments.RootQuery
+};
+const mutations = [
+  Contacts.Mutations,
+  Notifications.Mutations,
+  Departments.Mutations
+];
 // XX: check for duplicate mutation declarations
 // accross different models
 function checkForDuplicates(listOfMutations) {
