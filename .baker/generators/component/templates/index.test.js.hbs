@@ -1,0 +1,12 @@
+import 'react-native';
+import React from 'react';
+import {{#if isContainer}}{ {{componentName}} }{{else}}{{componentName}}{{/if}} from './index{{#if platform}}.{{platform}}{{/if}}';
+
+import renderer from 'react-test-renderer';
+
+it('renders correctly', () => {
+  const tree = renderer.create(
+    <{{componentName}} />
+  ).toJSON();
+  expect(tree).toMatchSnapshot();
+});

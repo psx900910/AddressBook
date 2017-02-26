@@ -1,0 +1,3 @@
+rootProject.name = 'AddressBook'
+
+include ':app'

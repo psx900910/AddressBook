@@ -1,0 +1,19 @@
+{{#if isContainer}}
+{{componentName}}.propTypes = {
+  {{reducerName}}: React.PropTypes.object.isRequired,
+  dispatch: React.PropTypes.func.isRequired,
+};
+
+function mapDispatchToProps(dispatch) {
+  return {
+    dispatch,
+  };
+}
+
+export default connect(
+  createSelector({{selectorName}}, ({{reducerName}}) => ({ {{reducerName}} })),
+  mapDispatchToProps
+)({{componentName}});
+{{else}}
+export default {{componentName}};
+{{/if}}
