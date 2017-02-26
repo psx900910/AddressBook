@@ -1,23 +1,27 @@
-# 🍰 Baker - Mobile MVP Toolkit
+# React Native 实战项目-企业通信录
 
-[![Build Status](https://travis-ci.org/bakery/baker.svg?branch=master)](https://travis-ci.org/bakery/baker)
-[![Join the chat at Gitter](https://badges.gitter.im/gitterHQ/gitterHQ.github.io.svg)](https://gitter.im/baker-mobile/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+该项目是我学习React Native后动手开发的一个项目，使用[baker](https://github.com/bakery/baker)工具来开发，包括服务端和客户端。
 
-Baker is an opinionated MVP toolkit that helps you build mobile apps crazy fast. It is based on React Native and Parse Server and bundles a whole lot of goodies inside a delicious package that will help you type less and do more.
+## 使用到的技术
+* React Native
+* Redux
+* Redux-saga
+* Graphql
+* Parse Server
+* 其他一些开源组件
 
 ## Quickstart
 
-You must have your system ready for React Native. This generally means going through [Getting started section](https://facebook.github.io/react-native/docs/getting-started.html#content) section of RN's website.
+首先你需要搭建好React Native开发环境，参考RN官方文档 [Getting started section](https://facebook.github.io/react-native/docs/getting-started.html#content)
 
 ```sh
-git clone https://github.com/thebakeryio/baker.git MyReactNativeApp
-cd MyReactNativeApp && npm install && npm run setup 
+git clone https://github.com/psx900910/AddressBook.git AddressBook
+cd AddressBook && yarn install && yarn run setup 
 ```
-
-Running your app on iOS/Android
-
+或者通过npm来安装依赖包
 ```sh
-npm run ios/android
+git clone https://github.com/psx900910/AddressBook.git AddressBook
+cd AddressBook && npm install && npm run setup
 ```
 
 Running app server
@@ -26,16 +30,14 @@ Running app server
 npm run server
 ```
 
-Scaffolding
+Running your app on iOS/Android
 
 ```sh
-npm run generate
+npm run ios/android
 ```
 
-## Documentation
+## 参考文档
 
-Refer to the project page for detailed [documentation](http://baker.thebakery.io/)
+Baker [documentation](http://baker.thebakery.io/)
 
-## Sample apps built using Baker
-
-- [TodoMVC](https://github.com/thebakeryio/todomvc-react-native)
+## 运行截图
