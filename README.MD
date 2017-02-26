@@ -24,13 +24,13 @@ git clone https://github.com/psx900910/AddressBook.git AddressBook
 cd AddressBook && npm install && npm run setup
 ```
 
-Running app server
+运行服务器
 
 ```sh
 npm run server
 ```
 
-Running your app on iOS/Android
+运行客户端
 
 ```sh
 npm run ios/android
@@ -38,6 +38,6 @@ npm run ios/android
 
 ## 参考文档
 
-Baker [documentation](http://baker.thebakery.io/)
+[Baker documentation](http://baker.thebakery.io/)
 
 ## 运行截图
